@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Sairish Aliya</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons (optional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        /* Reset Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f7f3f2;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+            position: relative;
+        }
+
+        /* Background Gradient */
+        body::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(135deg, #e07a5f 25%, #81b29a 100%);
+            transform: rotate(25deg);
+            opacity: 0.1;
+            z-index: -1;
+        }
+
+        /* Header Styles */
+        header {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 600;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #e07a5f;
+            color: #fff;
+        }
+
+        /* About Container */
+        .about-container {
+            max-width: 900px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        /* Profile Picture */
+        .profile-image {
+            width: 350px;
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        /* Text Content */
+        .about-text {
+            max-width: 600px;
+        }
+
+        .about-header h1 {
+            font-size: 36px;
+            color: #3d405b;
+            margin-bottom: 10px;
+        }
+
+        .about-header h2 {
+            font-size: 24px;
+            color: #e07a5f;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        /* Content Styles */
+        .about-content p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .about-content ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .about-content ul li {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #555;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .about-content ul li::before {
+            content: "\f111";
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            font-size: 8px;
+            color: #e07a5f;
+            position: absolute;
+            left: 0;
+            top: 8px;
+        }
+
+        /* Skills Section */
+        .skills-header {
+            font-size: 24px;
+            color: #3d405b;
+            margin: 20px 0 10px;
+        }
+
+        .skills-content {
+            font-size: 18px;
+            color: #555;
+        }
+
+        /* Experience Section */
+        .experience-header {
+            font-size: 24px;
+            color: #3d405b;
+            margin: 20px 0 10px;
+        }
+
+        /* CV Download Button */
+        .cv-button {
+            background-color: #e07a5f;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cv-button:hover {
+            background-color: #3d405b;
+        }
+
+        /* Link Button for Certifications */
+        .cert-link {
+            background-color: #81b29a;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .cert-link:hover {
+            background-color: #3d405b;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .about-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .profile-image {
+                margin-bottom: 20px;
+            }
+
+            .about-header h1 {
+                font-size: 28px;
+            }
+
+            .about-header h2 {
+                font-size: 20px;
+            }
+
+            .about-content p,
+            .about-content ul li {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body id="about">
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Me Content -->
+    <div class="about-container">
+        <!-- Intro Text on the Left -->
+        <div class="about-text">
+            <div class="about-header">
+                <h1>Hello, I'm Sairish Aliya</h1>
+                <h2>But you can call me <strong>CodeStorm Poet</strong></h2>
+            </div>
+            <div class="about-content">
+                <p>Hey! I'm Sairish Aliya, a dedicated and passionate Computer Engineering student currently pursuing my Diploma at <strong>Jamia Millia Islamia University (2022-2025)</strong>, where I proudly maintain an impressive <strong>82%</strong> score. I completed my 10th grade with a notable <strong>90%</strong>.</p>
+                <p>My journey in technology is driven by a relentless curiosity and a commitment to creating engaging digital experiences. With a strong affinity for <strong>front-end development</strong>, I enjoy crafting code that not only performs seamlessly but also captivates visually.</p>
+                <p>Beyond my technical pursuits, I am a contemplative poet, drawing inspiration from the intricate ebb and flow of life. This passion for poetry infuses a creative dimension into my work, harmoniously blending logic with imagination.</p>
+
+                <h3>Education</h3>
+                <ul>
+                    <li><strong>Diploma in Computer Engineering:</strong> Jamia Millia Islamia University (2022-2025) | Activities: Student Placement Coordinator</li>
+                    <li><strong>High School Education:</strong> Jamia Millia Islamia Senior Secondary School (Completed in 2022)</li>
+                </ul>
+
+                <h3>Skills</h3>
+                <div class="skills-content">
+                    <p><strong>Programming Languages:</strong> C++, C, HTML & CSS</p>
+                    <p><strong>Office Skills:</strong> MS Office (Word, Excel, PowerPoint)</p>
+                    <p><strong>Editing:</strong> Video & Poster Editing</p>
+                    <p><strong>Software:</strong> Adobe Acrobat Professional</p>
+                    <p><strong>Other Skills:</strong> Internet Browsing & Emails, Office Automation</p>
+                </div>
+
+                <h3>Certifications</h3>
+                <ul>
+                    <li>
+                        <p>Eight-Week Industrial Training on Data Science</p>
+                        <a href="Sairish Aliya_certificate.pdf" class="cert-link" target="_blank">View Certificate</a>
+                    </li>
+                    <li>
+                        <p>Eight-Week Training on Front-End Development</p>
+                        <a href="Sairish Training Experience letter.pdf" class="cert-link" target="_blank">View Certificate</a>
+                    </li>
+                </ul>
+
+                <h3>Experience</h3>
+                <ul>
+                    <li><strong>Student Placement Coordinator</strong> at Jamia Millia Islamia</li>
+                    <li><strong>Data Science Intern</strong> at Skilldzire</li>
+                    <li><strong>Photography and Videography</strong> at Ma'aashiyat</li>
+                    <li><strong>Volunteer</strong> at Job Fair, Jamia Millia Islamia</li>
+                </ul>
+
+                <p>If you want to know more about my work or have any questions, feel free to reach out!</p>
+            </div>
+            <a href="SAIRISHCV1.pdf" class="cv-button" download>Download My CV</a>
+        </div>
+
+        <!-- Profile Picture on the Right -->
+        <img src="sairish-photo.jpg" alt="Profile Picture" class="profile-image">
+    </div>
+</body>
+</html>

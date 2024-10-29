@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Sairish Aliya</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Reset Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f7f3f2;
+            color: #333;
+            padding: 40px 20px;
+            position: relative;
+        }
+
+        /* Background Gradient */
+        body::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(135deg, #e07a5f 25%, #81b29a 100%);
+            transform: rotate(25deg);
+            opacity: 0.1;
+            z-index: -1;
+        }
+
+        /* Header Styles */
+        header {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 600;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #e07a5f;
+            color: #fff;
+        }
+
+        /* Projects Container */
+        .projects-container {
+            max-width: 900px;
+            margin: auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .project {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #e07a5f;
+            border-radius: 10px;
+            background-color: #fefefe;
+        }
+
+        .project h3 {
+            font-size: 24px;
+            color: #3d405b;
+        }
+
+        .project p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .project a {
+            text-decoration: none;
+            color: #e07a5f;
+            font-weight: bold;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Projects Section -->
+    <div class="projects-container">
+        <h1>My Projects</h1>
+        
+        <!-- Project 1: Library Management System -->
+        <div class="project">
+            <h3>Library Management System</h3>
+            <p>
+                This Library Management System simplifies library operations by managing book inventory, tracking borrowed books, and maintaining user data efficiently. Key features include user registration, book search, checkout and return functionalities, and fine calculation. This project focuses on enhancing the user experience through a clear and intuitive interface.
+            </p>
+        </div>
+
+        <!-- Project 2: Hostel Management System -->
+        <div class="project">
+            <h3>Hostel Management System</h3>
+            <p>
+                Developed as part of a summer internship, this desktop application optimizes hostel administration by automating tasks such as student registration, room allocation, fee management, and complaints handling. The system leverages Apache NetBeans IDE and a MySQL database via phpMyAdmin, with features including merit-based room allocation, comprehensive inventory management, and an intuitive fee collection module.
+            </p>
+        </div>
+        
+        <!-- Project 3: Placement Office Automation -->
+        <div class="project">
+            <h3>Placement Office Automation</h3>
+            <p>
+                For company recruitment and applicable students for jobs, an automated system was developed to simplify the process of listing applicants and companies based on final year percentages. This system enhances the efficiency of placement operations.
+            </p>
+            <p><strong>Duration:</strong> 60 days<br>
+            <strong>Language used:</strong> C</p>
+        </div>
+
+        <!-- Add more projects as needed -->
+        
+    </div>
+
+</body>
+</html>
